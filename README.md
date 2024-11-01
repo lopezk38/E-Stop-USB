@@ -3,7 +3,8 @@ E-Stop USB conversion project
 This project is a custom made conversion kit for an Eaton E-Stop to allow it to send a
 	keystroke over USB (ESC by default) to trigger execution of a program to halt.
 
-Hardware:	
+Hardware:
+
 	The hardware modifications were fairly nonintrusive. I replaced the XLR plug and socket with a
 	blank on one side and a carrier for an Adafruit Qt Py 2040 for the other side which exposes
 	the USB port. The carrier also has a provision for a small protoboard which was used to
@@ -13,7 +14,8 @@ Hardware:
 	
 	The CAD was done in SolidEdge, the plug and carrier were FDM 3D printed
 
-Electrical:	
+Electrical:
+
 	Unfortunately, I built the circuitry on the protoboard on the spot without schematics, so there
 	is no documentation for that. It was very simple though: just some current limiting resistors
 	for hot side of the button and key barrel (in case of a short), current limiting resistors for
@@ -23,6 +25,7 @@ Electrical:
 	disabled in software. The start button was left unconnected.
 
 Software:
+
 	Written for CircuitPython running on an Adafruit Qt Py 2040. Utilizes Adafruit keyboard libraries
 
 	The software monitors E-Stop position and lock cylinder position. The start button is not monitored
